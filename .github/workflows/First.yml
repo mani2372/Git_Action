@@ -1,8 +1,8 @@
 name: First_action
 on: push
-    job :
-      First
-        run-on: unbuntu-latast
-          step:
-            -name: welcome
-             run: echo "Welcome" 
+job :
+    First
+    run-on: ubuntu-latast
+        step:
+            - name: welcome
+              run: echo "Welcome" 
