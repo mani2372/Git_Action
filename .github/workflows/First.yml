@@ -1,9 +1,9 @@
 name: First_action
 on: push
 
-job :
-    First
+jobs :
+    First:
         runs-on: ubuntu-latest
-        step:
+        steps:
             - name: welcome
               run: echo "Welcome" 
