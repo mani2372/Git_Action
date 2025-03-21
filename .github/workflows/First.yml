@@ -1,5 +1,5 @@
-name : First_action
-  on : push
+name: First_action
+on: push
     job :
       First
         run-on: unbuntu-latast
