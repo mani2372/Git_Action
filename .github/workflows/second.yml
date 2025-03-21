@@ -2,14 +2,13 @@ name: second
 on: push
 jobs:
     second:
-    runs-on: ubuntu-latest
-    steps:
-        - name: checkout
-          uses: actions/checkout@v4.2.2
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v4.2.2
 
-        - name: Setup Python
-          uses: actions/setup-python@v5.4.0
-          with: 5.4.0
+            - name: Setup Python
+              uses: actions/setup-python@v5.4.0
 
-        - name: run the py file
-          run: second.py
+            - name: run the py file
+              run: second.py
