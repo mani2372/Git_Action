@@ -8,7 +8,6 @@ jobs:
         steps:
         - name: Print Email
           run: echo "Send Email"
-
         - name: Send email
           if: ${{always()}}
           uses: dawidd6/action-send-mail@v3
