@@ -11,7 +11,7 @@ jobs:
 
         - name: S_Email
           if: ${{always()}}
-          uses: devellany/send-mailer@v1
+          uses: devellany/send-mailer@v1.0.1
           with:
             host: smtp.google.com
             # Optional port (defaults to 465)
