@@ -20,6 +20,6 @@ jobs:
             
             from: manii
             to: kcmm1910@gmail.com
-            subject: mail title
-            body: your messages
+            subject: $ {{ github.job }} job of $ {{ github.repository }} has $ {{ job.status }}
+            body: $ {{ github.job }} job in workflow $ {{ github.workflow }} of $ {{ github.repository }} has $ {{ job.status }}
             
