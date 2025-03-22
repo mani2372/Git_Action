@@ -18,7 +18,7 @@ jobs:
             port: 465
             account: ${{secrets.ACCOUNT}}
             password: ${{secrets.MAIL_PASSWORD}}
-            sender: devellany
+            sender: GIT_ ACTION
             from: ${{secrets.MAIL_ADDRESS}}
             to: kcmanikandan19102001@gmail.com
             subject: testing mail
