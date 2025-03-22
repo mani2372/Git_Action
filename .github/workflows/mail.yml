@@ -11,7 +11,6 @@ jobs:
 
         - name: S_Email
           if: ${{always()}}
-          uses: devellany/send-mailer@v1.0.2
           uses: devellany/send-mailer@v1
           with:
             host: smtp.google.com
