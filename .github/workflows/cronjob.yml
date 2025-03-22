@@ -1,19 +1,18 @@
-name: Cron Job Example
-
-on:
-  schedule:
-    - cron: '* * * * *'  # Correct cron expression to run every minute
+name: Cronjob
+on: 
+    schedule:
+      - cron: '* * * * *'
 
 jobs:
-  Cron:
-    runs-on: ubuntu-latest
+    Cron:
+        runs-on: ubuntu-latest
 
-    steps:
-    - name: Clone repo
-      uses: actions/checkout@v4
+        steps:
+        - name: clone repo
+          uses: actions/checkout@v4
 
-    - name: Setup Python
-      uses: actions/setup-python@v4  # Use setup-python action instead of checking out the repo again
-
-    - name: Run Python script
-      run: python second.py  # Replace 'second.py' with the path to your script
+        - name: setup python
+          uses: actions/checkout@v4
+            
+        - name: run python script
+          run: python second.py  
